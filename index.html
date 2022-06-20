@@ -8,7 +8,7 @@
 
     <!-- Texto para o Google aqui! -->
     <meta name="description" content="">
-    
+
     <link rel="icon" type="image/png" sizes="1080x1080" href="assets/img/01 Logo.jpg">
     <link rel="icon" type="image/png" sizes="1080x1080" href="assets/img/01 Logo.jpg">
     <link rel="icon" type="image/png" sizes="1080x1080" href="assets/img/01 Logo.jpg">
@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
     <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
 
     <!-- Animações -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
@@ -75,13 +76,24 @@
             <h2 data-aos="slide-up" data-aos-duration="1000" data-aos-once="true">Modelando sua melhor forma</h2>
             <h5 data-aos="slide-up" data-aos-duration="1000" data-aos-once="true" style="letter-spacing: 4px;">Serviços
                 de massagem, saúde e beleza a domicílio</h5>
-            <a href="#serviços">
-                <i class="icon ion-ios-arrow-down text-white fa-4x"
-                    style="text-shadow: 2px 2px 3px rgba(0,0,0,0.41);"></i>
+            <a href="#serviços" class="link-light">
+                <i class="material-icons text-white my-hover-icon">keyboard_arrow_down</i>
             </a>
         </div>
-        <div class="my-parallax-bg"
-            style="background: url(&quot;assets/img/03%20Parallax.png&quot;) center / cover no-repeat;">
+
+        <!-- Parallax / style só funcionou no index.html -->
+        <div style="
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: url(&quot;assets/img/03%20Parallax.png&quot;) center / cover no-repeat;
+        opacity: 0.50;
+        background-attachment: fixed;">
         </div>
     </header>
 
@@ -100,9 +112,11 @@
                 </p>
             </div>
             <hr class=" section-hr">
+
+            <!-- Massagem Relaxante-->
             <div class="row">
-                <div class="col col-md-6 col-lg-4 portfolio-item" data-bss-disabled-mobile="true" data-aos="fade-up"
-                    data-aos-duration="1000" data-aos-once="true">
+                <div class="col-sm-12 col-md-6 col-lg-4 portfolio-item" data-bss-disabled-mobile="true"
+                    data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
                     <a href="#portfolioModal1" data-bs-toggle="modal" class="portfolio-link">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
@@ -114,53 +128,68 @@
                                 </svg>
                             </div>
                         </div>
-                        <img class="img-fluid" src="assets/img/Massagem%20Relaxante.jpg">
+                        <img class="img-fluid" src="assets\img\04 Massagem Relaxante.jpg">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Massagem relaxante</h4>
+                        <h4 class="text-center">Massagem relaxante</h4>
                         <p class="text-muted">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at facilisis leo.
+                            Também chamada de massoterapia, a massagem relaxante é
+                            uma técnica que mescla movimentos firmes e suaves sobre o corpo.
                         </p>
                     </div>
                 </div>
 
-                <!-- Parei aqui -->
+                <!-- Massagem Modeladora -->
                 <div class="col-sm-12 col-md-6 col-lg-4 portfolio-item" data-bss-disabled-mobile="true"
-                    data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" data-aos-once="true"><a
-                        href="#portfolioModal2" data-bs-toggle="modal" class="portfolio-link">
+                    data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" data-aos-once="true">
+                    <a href="#portfolioModal2" data-bs-toggle="modal" class="portfolio-link">
                         <div class="portfolio-hover">
-                            <div class="portfolio-hover-content"><svg xmlns="http://www.w3.org/2000/svg" width="1em"
-                                    height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-plus">
+                            <div class="portfolio-hover-content">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
+                                    viewBox="0 0 16 16" class="bi bi-plus">
                                     <path
                                         d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z">
                                     </path>
-                                </svg></div>
-                        </div><img class="img-fluid" src="assets/img/Massagem%20Modeladora.jpg">
+                                </svg>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="assets\img\05 Massagem Modeladora.jpg">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Massagem modeladora</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at
-                            facilisis leo.<br></p>
+                        <h4 class="text-center">Massagem modeladora</h4>
+                        <p class="text-muted">
+                            Feita com movimentos fortes, tem o intuito de atingir camadas
+                            profundas da pele com o objetivo de reorganizar as camadas de gordura.
+                        </p>
                     </div>
                 </div>
+
+                <!-- Massagem Terapêutica-->
                 <div class="col-sm-12 col-md-6 col-lg-4 portfolio-item" data-bss-disabled-mobile="true"
-                    data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000" data-aos-once="true"><a
-                        href="#portfolioModal3" data-bs-toggle="modal" class="portfolio-link">
+                    data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000" data-aos-once="true">
+                    <a href="#portfolioModal3" data-bs-toggle="modal" class="portfolio-link">
                         <div class="portfolio-hover">
-                            <div class="portfolio-hover-content"><svg xmlns="http://www.w3.org/2000/svg" width="1em"
-                                    height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-plus">
+                            <div class="portfolio-hover-content">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
+                                    viewBox="0 0 16 16" class="bi bi-plus">
                                     <path
                                         d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z">
                                     </path>
-                                </svg></div>
-                        </div><img class="img-fluid" src="assets/img/Massagem%20Terapêutica.jpg">
+                                </svg>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="assets\img\06 Massagem Terapêutica.jpg">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Massagem terapêutica</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at
-                            facilisis leo.<br></p>
+                        <h4 class="text-center">Massagem terapêutica</h4>
+                        <p class="text-muted">
+                            Foca nas partes do corpo que mais necessitam de tratamento, por meio de manobras clássicas,
+                            Shiatsu e alongamentos.
+                        </p>
                     </div>
                 </div>
+
+                <!-- Drenagem Linfática -->
                 <div class="col-sm-12 col-md-6 col-lg-4 portfolio-item" data-bss-disabled-mobile="true"
                     data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"><a href="#portfolioModal4"
                         data-bs-toggle="modal" class="portfolio-link">
@@ -339,7 +368,9 @@
     </footer>
 
     <!-- Modais -->
-    <div class="modal fade text-center portfolio-modal" role="dialog" tabindex="-1" id="portfolioModal1">
+
+    <!-- Modal Massagem Relaxante-->
+    <div class="modal fade portfolio-modal" role="dialog" tabindex="-1" id="portfolioModal1">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="container">
@@ -347,7 +378,7 @@
                     <!-- Botão de fechar -->
                     <div class="text-end" style="width: 100%;padding-top: 20px;padding-right: 10px;">
                         <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none"
-                            class="fa-2x" style="color: var(--bs-gray-700);" data-bs-dismiss="modal">
+                            class="fa-2x text-dark my-hover-icon" data-bs-dismiss="modal">
                             <path
                                 d="M6.2253 4.81108C5.83477 4.42056 5.20161 4.42056 4.81108 4.81108C4.42056 5.20161 4.42056 5.83477 4.81108 6.2253L10.5858 12L4.81114 17.7747C4.42062 18.1652 4.42062 18.7984 4.81114 19.1889C5.20167 19.5794 5.83483 19.5794 6.22535 19.1889L12 13.4142L17.7747 19.1889C18.1652 19.5794 18.7984 19.5794 19.1889 19.1889C19.5794 18.7984 19.5794 18.1652 19.1889 17.7747L13.4142 12L19.189 6.2253C19.5795 5.83477 19.5795 5.20161 19.189 4.81108C18.7985 4.42056 18.1653 4.42056 17.7748 4.81108L12 10.5858L6.2253 4.81108Z"
                                 fill="currentColor">
@@ -355,17 +386,97 @@
                         </svg>
                     </div>
 
+                    <!-- Corpo -->
                     <div class="row">
                         <div class="col-lg-8 mx-auto">
                             <div class="modal-body">
+
+                                <!-- Cabeçario -->
                                 <h3 class="text-uppercase">Massagem relaxante</h3>
-                                <p class="text-muted item-intro">Lorem ipsum dolor sit amet consectetur.</p>
-                                <div style="height: 400px;overflow: hidden;"><img class="img-fluid d-block mx-auto"
-                                        src="assets/img/Massagem%20Relaxante.jpg"></div>
-                                <p class="mt-3">Use this area to describe your project. Lorem ipsum dolor sit amet,
-                                    consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus
-                                    dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate,
-                                    maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <p class="text-muted item-intro">
+                                    Técnica que mescla movimentos firmes e suaves sobre o corpo.
+                                </p>
+                                <div style="height: 400px;overflow: hidden;">
+                                    <img class="img-fluid d-block mx-auto" src="assets\img\04 Massagem Relaxante.jpg">
+                                </div>
+
+                                <!-- Conteúdo -->
+                                <div class="modal-text">
+                                    <h5>O que é a massagem relaxante?</h5>
+                                    <p>
+                                        A massagem relaxante também chamada de massoterapia relaxante é
+                                        uma técnica que mescla movimentos firmes e suaves sobre o corpo.
+                                        Esses movimentos, por sua vez, estimulam a produção de hormônios
+                                        relaxantes, como a ocitocina e
+                                        é capaz de trazer uma série de benefícios, indo muito além da
+                                        promoção de tranquilidade e bem-estar.
+                                    </p>
+                                    <h5>Para que serve a massagem relaxante?</h5>
+                                    <p>
+                                        Usando-se de movimentos leves, a massagem relaxante é uma
+                                        excelente alternativa para o tratamento de dores musculares.
+                                        Geralmente causadas por estresse, problemas de postura ou
+                                        movimentos repetitivos, esses hábitos são prejudiciais, resultando em
+                                        diferentes doenças. Dessa maneira, ela é uma ferramenta que promove
+                                        o bem-estar, aliviando o desconforto das regiões mais afetadas. É
+                                        também por meio da massagem relaxante que aumentamos a
+                                        temperatura do corpo e seu fluxo sanguíneo. Assim, reduzimos não
+                                        apenas a tensão produzida pelos nervos, mas também as toxinas
+                                        acumuladas nos músculos. Altamente benéfica, seus resultados ficam
+                                        ainda melhores quando combinados a óleos e aromas terapêuticos,
+                                        que potencializam suas sensações.
+                                    </p>
+                                    <h5>Benefícios da massagem relaxante</h5>
+                                    <ul>
+                                        <li>Controle do estresse e problemas emocionais;</li>
+                                        <li>Tratamento da ansiedade;</li>
+                                        <li>Casos de fadiga e insônia;</li>
+                                        <li>Normalização do humor;</li>
+                                        <li>Controle dos batimentos cardíacos;</li>
+                                        <li>Sensibilidade a dor;</li>
+                                        <li>Alívio de tensões;</li>
+                                        <li>Calma e equilíbrio;</li>
+                                        <li>Liberação de hormônios que promovem bem-estar;</li>
+                                        <li>Melhora da qualidade de vida;</li>
+                                        <li>Melhora da elasticidade dos músculos;</li>
+                                        <li>Diminuição do cansaço físico e mental;</li>
+                                        <li>Diminuição da pressão arterial;</li>
+                                        <li>Melhora da circulação sanguínea;</li>
+                                        <li>Prevenção de problemas musculares;</li>
+                                        <li>Melhora do sistema nervoso;</li>
+                                        <li>Eliminação de resíduos metabólicos e toxinas;</li>
+                                        <li>Tratamento do envelhecimento precoce da pele;</li>
+                                        <li>Acelera o metabolismo e melhora da digestão;</li>
+                                        <li>Equilíbrio do funcionamento do intestino;</li>
+                                        <li>Tratamento de artroses.</li>
+                                    </ul>
+                                    <h5>Contraindicações</h5>
+                                    <p>
+                                        Mesmo que a massagem relaxante seja uma técnica segura e que seja
+                                        capaz de promover uma série de benefícios, assim como qualquer
+                                        outro procedimento, possui as suas contraindicações, são elas:
+                                    </p>
+                                    <ul>
+                                        <li>Inflamação aguda;</li>
+                                        <li>Lesões dermatológicas;</li>
+                                        <li>Tumores malignos;</li>
+                                        <li>Distúrbios circulatórios;</li>
+                                        <li>Traumas agudos;</li>
+                                        <li>Febre;</li>
+                                        <li>Circulações com edemas e doloridas;</li>
+                                        <li>Cardíacos não tratados.</li>
+                                    </ul>
+                                    <div class="text-center my-4">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                            viewBox="0 0 24 24" fill="none" class="fa-2x text-dark my-hover-icon"
+                                            data-bs-dismiss="modal">
+                                            <path
+                                                d="M6.2253 4.81108C5.83477 4.42056 5.20161 4.42056 4.81108 4.81108C4.42056 5.20161 4.42056 5.83477 4.81108 6.2253L10.5858 12L4.81114 17.7747C4.42062 18.1652 4.42062 18.7984 4.81114 19.1889C5.20167 19.5794 5.83483 19.5794 6.22535 19.1889L12 13.4142L17.7747 19.1889C18.1652 19.5794 18.7984 19.5794 19.1889 19.1889C19.5794 18.7984 19.5794 18.1652 19.1889 17.7747L13.4142 12L19.189 6.2253C19.5795 5.83477 19.5795 5.20161 19.189 4.81108C18.7985 4.42056 18.1653 4.42056 17.7748 4.81108L12 10.5858L6.2253 4.81108Z"
+                                                fill="currentColor">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -374,28 +485,102 @@
         </div>
     </div>
 
-    <div class="modal fade text-center portfolio-modal" role="dialog" tabindex="-1" id="portfolioModal2">
+    <!-- Modal Massagem Modeladora-->
+    <div class="modal fade portfolio-modal" role="dialog" tabindex="-1" id="portfolioModal2">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="container">
-                    <div class="text-end" style="width: 100%;padding-top: 20px;padding-right: 10px;"><a href="#"><svg
-                                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
-                                fill="none" class="fa-2x" style="color: var(--bs-gray-700);" data-bs-dismiss="modal">
-                                <path
-                                    d="M6.2253 4.81108C5.83477 4.42056 5.20161 4.42056 4.81108 4.81108C4.42056 5.20161 4.42056 5.83477 4.81108 6.2253L10.5858 12L4.81114 17.7747C4.42062 18.1652 4.42062 18.7984 4.81114 19.1889C5.20167 19.5794 5.83483 19.5794 6.22535 19.1889L12 13.4142L17.7747 19.1889C18.1652 19.5794 18.7984 19.5794 19.1889 19.1889C19.5794 18.7984 19.5794 18.1652 19.1889 17.7747L13.4142 12L19.189 6.2253C19.5795 5.83477 19.5795 5.20161 19.189 4.81108C18.7985 4.42056 18.1653 4.42056 17.7748 4.81108L12 10.5858L6.2253 4.81108Z"
-                                    fill="currentColor"></path>
-                            </svg></a></div>
+
+                    <!-- Botão de fechar -->
+                    <div class="text-end" style="width: 100%;padding-top: 20px;padding-right: 10px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none"
+                            class="fa-2x text-dark my-hover-icon" data-bs-dismiss="modal">
+                            <path
+                                d="M6.2253 4.81108C5.83477 4.42056 5.20161 4.42056 4.81108 4.81108C4.42056 5.20161 4.42056 5.83477 4.81108 6.2253L10.5858 12L4.81114 17.7747C4.42062 18.1652 4.42062 18.7984 4.81114 19.1889C5.20167 19.5794 5.83483 19.5794 6.22535 19.1889L12 13.4142L17.7747 19.1889C18.1652 19.5794 18.7984 19.5794 19.1889 19.1889C19.5794 18.7984 19.5794 18.1652 19.1889 17.7747L13.4142 12L19.189 6.2253C19.5795 5.83477 19.5795 5.20161 19.189 4.81108C18.7985 4.42056 18.1653 4.42056 17.7748 4.81108L12 10.5858L6.2253 4.81108Z"
+                                fill="currentColor">
+                            </path>
+                        </svg>
+                    </div>
+
+                    <!-- Corpo -->
                     <div class="row">
                         <div class="col-lg-8 mx-auto">
                             <div class="modal-body">
-                                <h3 class="text-uppercase">Massagem modeladora</h3>
-                                <p class="text-muted item-intro">Lorem ipsum dolor sit amet consectetur.</p>
-                                <div style="height: 400px;overflow: hidden;"><img class="img-fluid d-block mx-auto"
-                                        src="assets/img/Massagem%20Modeladora.jpg"></div>
-                                <p class="mt-3">Use this area to describe your project. Lorem ipsum dolor sit amet,
-                                    consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus
-                                    dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate,
-                                    maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+
+                                <!-- Cabeçario -->
+                                <div class="text-center">
+                                    <h3 class="text-uppercase">Massagem modeladora</h3>
+                                    <p class="text-muted item-intro">
+                                        Tem o objetivo de reorganizar as camadas de gordura.
+                                    </p>
+                                    <div style="height: 400px;overflow: hidden;">
+                                        <img class="img-fluid d-block mx-auto"
+                                            src="assets\img\05 Massagem Modeladora.jpg">
+                                    </div>
+                                </div>
+
+                                <!-- Conteúdo -->
+                                <div class="modal-text">
+                                    <h5>O que é a massagem modeladora?</h5>
+                                    <p>
+                                        A massagem modeladora é uma ótima opção para quem deseja
+                                        modelar o corpo e reduzir medidas. Ela é uma massagem feita com
+                                        movimentos mais fortes e profundos, com o intuito de atingir camadas
+                                        mais profundas da pele com o objetivo de reorganizar as camadas de
+                                        gordura, promovendo a harmonização dos contornos corporais. Além
+                                        disso, pode auxiliar na redução de medidas e na retenção de líquidos,
+                                        estimular a circulação sanguínea e o metabolismo.
+                                    </p>
+                                    <h5>Para que serve a massagem modeladora?</h5>
+                                    <p>
+                                        A massagem modeladora é indicada para melhorar a oxigenação dos
+                                        tecidos, estimular o sistema linfático e auxiliar no rompimento das
+                                        células de gordura. As principais finalidades da massagem
+                                        modeladora são ativar o metabolismo local, aumentar a circulação
+                                        sanguínea e estimular respostas neuromusculares, o que dá a
+                                        impressão de estar com o corpo mais rígido, a partir de movimentos
+                                        rítmicos e vigorosos, aplicando uma pressão maior do que outras
+                                        técnicas de massagem, a massagem modeladora consegue
+                                        ultrapassar as camadas mais superficiais da pele, alcançando as
+                                        células adiposas e proporcionando uma silhueta mais definida.
+                                    </p>
+                                    <h5>Benefícios da massagem modeladora</h5>
+                                    <ul>
+                                        <li>Proporcionar relaxamento;</li>
+                                        <li>Diminuir a tensão muscular;</li>
+                                        <li>Amenizar celulites;</li>
+                                        <li>Ajudar no funcionamento do intestino;</li>
+                                        <li>Diminui a retenção hídrica;</li>
+                                        <li>Facilita a nutrição das células;</li>
+                                        <li>Auxilia na redução de medidas.</li>
+                                    </ul>
+                                    <h5>Contraindicações</h5>
+                                    <p>
+                                        Mesmo que a massagem modeladora seja uma técnica segura e que seja
+                                        capaz de promover uma série de benefícios, assim como qualquer
+                                        outro procedimento, possui as suas contraindicações, são elas:
+                                    </p>
+                                    <ul>
+                                        <li>Cardiopatia ou hipertensão;</li>
+                                        <li>Dermatite e dermatoses;</li>
+                                        <li>Trombose;</li>
+                                        <li>Varizes;</li>
+                                        <li>Febre;</li>
+                                        <li>Processos inflamatórios;</li>
+                                        <li>Fragilidade capilar;</li>
+                                        <li>Gestantes.</li>
+                                    </ul>
+                                    <div class="text-center my-4">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                            viewBox="0 0 24 24" fill="none" class="fa-2x text-dark my-hover-icon"
+                                            data-bs-dismiss="modal">
+                                            <path
+                                                d="M6.2253 4.81108C5.83477 4.42056 5.20161 4.42056 4.81108 4.81108C4.42056 5.20161 4.42056 5.83477 4.81108 6.2253L10.5858 12L4.81114 17.7747C4.42062 18.1652 4.42062 18.7984 4.81114 19.1889C5.20167 19.5794 5.83483 19.5794 6.22535 19.1889L12 13.4142L17.7747 19.1889C18.1652 19.5794 18.7984 19.5794 19.1889 19.1889C19.5794 18.7984 19.5794 18.1652 19.1889 17.7747L13.4142 12L19.189 6.2253C19.5795 5.83477 19.5795 5.20161 19.189 4.81108C18.7985 4.42056 18.1653 4.42056 17.7748 4.81108L12 10.5858L6.2253 4.81108Z"
+                                                fill="currentColor">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -404,28 +589,104 @@
         </div>
     </div>
 
-    <div class="modal fade text-center portfolio-modal" role="dialog" tabindex="-1" id="portfolioModal3">
+    <!-- Modal Massagem Terapêutica-->
+    <div class="modal fade portfolio-modal" role="dialog" tabindex="-1" id="portfolioModal3">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="container">
-                    <div class="text-end" style="width: 100%;padding-top: 20px;padding-right: 10px;"><a href="#"><svg
-                                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
-                                fill="none" class="fa-2x" style="color: var(--bs-gray-700);" data-bs-dismiss="modal">
-                                <path
-                                    d="M6.2253 4.81108C5.83477 4.42056 5.20161 4.42056 4.81108 4.81108C4.42056 5.20161 4.42056 5.83477 4.81108 6.2253L10.5858 12L4.81114 17.7747C4.42062 18.1652 4.42062 18.7984 4.81114 19.1889C5.20167 19.5794 5.83483 19.5794 6.22535 19.1889L12 13.4142L17.7747 19.1889C18.1652 19.5794 18.7984 19.5794 19.1889 19.1889C19.5794 18.7984 19.5794 18.1652 19.1889 17.7747L13.4142 12L19.189 6.2253C19.5795 5.83477 19.5795 5.20161 19.189 4.81108C18.7985 4.42056 18.1653 4.42056 17.7748 4.81108L12 10.5858L6.2253 4.81108Z"
-                                    fill="currentColor"></path>
-                            </svg></a></div>
+
+                    <!-- Botão de fechar -->
+                    <div class="text-end" style="width: 100%;padding-top: 20px;padding-right: 10px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none"
+                            class="fa-2x text-dark my-hover-icon" data-bs-dismiss="modal">
+                            <path
+                                d="M6.2253 4.81108C5.83477 4.42056 5.20161 4.42056 4.81108 4.81108C4.42056 5.20161 4.42056 5.83477 4.81108 6.2253L10.5858 12L4.81114 17.7747C4.42062 18.1652 4.42062 18.7984 4.81114 19.1889C5.20167 19.5794 5.83483 19.5794 6.22535 19.1889L12 13.4142L17.7747 19.1889C18.1652 19.5794 18.7984 19.5794 19.1889 19.1889C19.5794 18.7984 19.5794 18.1652 19.1889 17.7747L13.4142 12L19.189 6.2253C19.5795 5.83477 19.5795 5.20161 19.189 4.81108C18.7985 4.42056 18.1653 4.42056 17.7748 4.81108L12 10.5858L6.2253 4.81108Z"
+                                fill="currentColor">
+                            </path>
+                        </svg>
+                    </div>
+
+                    <!-- Corpo -->
                     <div class="row">
                         <div class="col-lg-8 mx-auto">
                             <div class="modal-body">
-                                <h3 class="text-uppercase">Massagem terapêutica</h3>
-                                <p class="text-muted item-intro">Lorem ipsum dolor sit amet consectetur.</p>
-                                <div style="height: 400px;overflow: hidden;"><img class="img-fluid d-block mx-auto"
-                                        src="assets/img/Massagem%20Terapêutica.jpg"></div>
-                                <p class="mt-3">Use this area to describe your project. Lorem ipsum dolor sit amet,
-                                    consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus
-                                    dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate,
-                                    maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+
+                                <!-- Cabeçario -->
+                                <div class="text-center">
+                                    <h3 class="text-uppercase">Massagem terapêutica</h3>
+
+                                    <!-- Parei aqui -->
+                                    <p class="text-muted item-intro">
+                                        Tem o objetivo de reorganizar as camadas de gordura.
+                                    </p>
+                                    <div style="height: 400px;overflow: hidden;">
+                                        <img class="img-fluid d-block mx-auto"
+                                            src="assets\img\05 Massagem Modeladora.jpg">
+                                    </div>
+                                </div>
+
+                                <!-- Conteúdo -->
+                                <div class="modal-text">
+                                    <h5>O que é a massagem modeladora?</h5>
+                                    <p>
+                                        A massagem modeladora é uma ótima opção para quem deseja
+                                        modelar o corpo e reduzir medidas. Ela é uma massagem feita com
+                                        movimentos mais fortes e profundos, com o intuito de atingir camadas
+                                        mais profundas da pele com o objetivo de reorganizar as camadas de
+                                        gordura, promovendo a harmonização dos contornos corporais. Além
+                                        disso, pode auxiliar na redução de medidas e na retenção de líquidos,
+                                        estimular a circulação sanguínea e o metabolismo.
+                                    </p>
+                                    <h5>Para que serve a massagem modeladora?</h5>
+                                    <p>
+                                        A massagem modeladora é indicada para melhorar a oxigenação dos
+                                        tecidos, estimular o sistema linfático e auxiliar no rompimento das
+                                        células de gordura. As principais finalidades da massagem
+                                        modeladora são ativar o metabolismo local, aumentar a circulação
+                                        sanguínea e estimular respostas neuromusculares, o que dá a
+                                        impressão de estar com o corpo mais rígido, a partir de movimentos
+                                        rítmicos e vigorosos, aplicando uma pressão maior do que outras
+                                        técnicas de massagem, a massagem modeladora consegue
+                                        ultrapassar as camadas mais superficiais da pele, alcançando as
+                                        células adiposas e proporcionando uma silhueta mais definida.
+                                    </p>
+                                    <h5>Benefícios da massagem modeladora</h5>
+                                    <ul>
+                                        <li>Proporcionar relaxamento;</li>
+                                        <li>Diminuir a tensão muscular;</li>
+                                        <li>Amenizar celulites;</li>
+                                        <li>Ajudar no funcionamento do intestino;</li>
+                                        <li>Diminui a retenção hídrica;</li>
+                                        <li>Facilita a nutrição das células;</li>
+                                        <li>Auxilia na redução de medidas.</li>
+                                    </ul>
+                                    <h5>Contraindicações</h5>
+                                    <p>
+                                        Mesmo que a massagem modeladora seja uma técnica segura e que seja
+                                        capaz de promover uma série de benefícios, assim como qualquer
+                                        outro procedimento, possui as suas contraindicações, são elas:
+                                    </p>
+                                    <ul>
+                                        <li>Cardiopatia ou hipertensão;</li>
+                                        <li>Dermatite e dermatoses;</li>
+                                        <li>Trombose;</li>
+                                        <li>Varizes;</li>
+                                        <li>Febre;</li>
+                                        <li>Processos inflamatórios;</li>
+                                        <li>Fragilidade capilar;</li>
+                                        <li>Gestantes.</li>
+                                    </ul>
+                                    <div class="text-center my-4">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                            viewBox="0 0 24 24" fill="none" class="fa-2x text-dark my-hover-icon"
+                                            data-bs-dismiss="modal">
+                                            <path
+                                                d="M6.2253 4.81108C5.83477 4.42056 5.20161 4.42056 4.81108 4.81108C4.42056 5.20161 4.42056 5.83477 4.81108 6.2253L10.5858 12L4.81114 17.7747C4.42062 18.1652 4.42062 18.7984 4.81114 19.1889C5.20167 19.5794 5.83483 19.5794 6.22535 19.1889L12 13.4142L17.7747 19.1889C18.1652 19.5794 18.7984 19.5794 19.1889 19.1889C19.5794 18.7984 19.5794 18.1652 19.1889 17.7747L13.4142 12L19.189 6.2253C19.5795 5.83477 19.5795 5.20161 19.189 4.81108C18.7985 4.42056 18.1653 4.42056 17.7748 4.81108L12 10.5858L6.2253 4.81108Z"
+                                                fill="currentColor">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

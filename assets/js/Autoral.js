@@ -1,3 +1,3 @@
-function handle(element){
+function handle(element) {
     element.classList.add('active')
 }
