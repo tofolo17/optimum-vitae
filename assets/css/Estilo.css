@@ -1,0 +1,193 @@
+body {
+  font-family: "Open Sans";
+}
+
+/* propriedades gerais */
+/* texto */
+.my-text-shadow {
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* espaçamento */
+.my-py {
+  padding-top: var(--pyt);
+  padding-bottom: var(--pyb);
+}
+
+/* ----- */
+
+/* navbar */
+#mainNav {
+  transition: padding-top .3s, padding-bottom .3s;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+
+  /* Impede adição do d-none */
+  display: flex !important;
+}
+
+.navbar-shrink {
+  padding-top: 1.25rem !important;
+  padding-bottom: 1.25rem !important;
+}
+
+.navbar-shadow {
+  box-shadow: 0px 1px 5px rgba(48, 48, 48, 0.3);
+}
+
+.navbar-brand {
+  font-size: 1.375rem;
+  font-family: Cinzel, serif;
+}
+
+@media (min-width: 768px) {
+  .nav-link {
+    padding: 0 1.25rem 0 1.25rem !important;
+  }
+}
+
+/* navbar underline */
+.active::after {
+  content: "";
+  display: block;
+  border-bottom: solid 2px transparent;
+  border-image: linear-gradient(90deg, rgba(143, 190, 112, 1) 0%, rgba(109, 177, 54, 1) 33%, rgba(56, 87, 152, 1) 66%, rgba(55, 81, 155, 1) 100%);
+  border-image-slice: 1;
+}
+
+.nav-link:not(.active)::after {
+  content: "";
+  display: block;
+  width: 0;
+  border-bottom: solid 2px transparent;
+  transition: width .3s;
+  border-image: linear-gradient(90deg, rgba(143, 190, 112, 1) 0%, rgba(109, 177, 54, 1) 33%, rgba(56, 87, 152, 1) 66%, rgba(55, 81, 155, 1) 100%);
+  border-image-slice: 1;
+}
+
+.nav-link:not(.active):hover::after {
+  width: 100%;
+}
+
+/* ----- */
+
+/* header */
+.header-hr {
+  margin-top: 16px;
+  margin-bottom: 32px;
+  background: linear-gradient(80deg, #13ff47, rgb(158, 255, 79) 37%, rgb(100, 150, 255) 70%, #275fff), rgb(255, 255, 255);
+}
+
+.my-parallax-bg {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.50;
+  background-attachment: fixed;
+}
+
+/* ----- */
+
+/* serviços */
+.section-hr {
+  margin-bottom: 32px;
+  margin-top: 32px;
+}
+
+/* portfolio template*/
+/* https://startbootstrap.com/previews/agency */
+@media (min-width: 767px) {
+  #serviços .portfolio-item {
+    margin: 0 0 30px;
+  }
+}
+
+#serviços .portfolio-item {
+  right: 0;
+  margin: 0 0 15px;
+}
+
+#serviços .portfolio-item .portfolio-link {
+  position: relative;
+  display: block;
+  max-width: 280px;
+  overflow: hidden;
+  max-height: 280px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+#serviços .portfolio-item .portfolio-link .portfolio-hover:hover {
+  opacity: 1;
+  background: rgba(58, 102, 140, 0.8);
+}
+
+#serviços .portfolio-item .portfolio-link .portfolio-hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: all ease .5s;
+  opacity: 0;
+  background: rgba(58, 102, 140, 0.8);
+}
+
+#serviços .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+  font-size: 40px;
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  height: 20px;
+  margin-top: -12px;
+  text-align: center;
+  color: #fff;
+}
+
+#serviços .portfolio-item .portfolio-caption {
+  max-width: 325px;
+  margin: 0 auto;
+  padding: 25px;
+  text-align: center;
+  background-color: #fff;
+}
+
+/* ----- */
+
+.tt {
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 768px) {
+  .col-footer {
+    text-align: center !important;
+  }
+}
+
+.footer-list {
+  text-decoration: none;
+  color: #f2f2f2;
+}
+
+.link-light {
+  text-decoration: none !important;
+}
+
+.tt2 {
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+
+.special {
+  max-width: 90% !important;
+  max-height: 400px !important;
+}
+
+@media (max-width: 767px) {
+  .special {
+    max-width: 280px !important;
+  }
+}
