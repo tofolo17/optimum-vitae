@@ -8,10 +8,88 @@ body {
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
 }
 
+.col-footer p {
+  font-size: 10px;
+}
+
+@media (max-width: 768px) {
+  .col-footer {
+    text-align: center !important;
+  }
+}
+
+.modal-body {
+  text-align: center;
+}
+
+.modal-text {
+  text-align: justify;
+}
+
+.link-light {
+  text-decoration: none !important;
+}
+
 /* espaçamento */
 .my-py {
   padding-top: var(--pyt);
   padding-bottom: var(--pyb);
+}
+
+.my-my {
+  margin-top: var(--myt);
+  margin-bottom: var(--myb);
+}
+
+.modal-text h5, .modal-text p, .modal-text ul {
+  margin-top: 1rem !important;
+}
+
+/* color */
+
+.my-gradient {
+  background: linear-gradient(80deg, #13ff47, rgb(158, 255, 79) 37%, rgb(100, 150, 255) 70%, #275fff), rgb(255, 255, 255);
+}
+
+#principios, #footer {
+  color: rgb(242, 242, 242);
+}
+
+#principios p {
+  color: rgb(225, 225, 225);
+}
+
+.modal-text p, .modal-text ul {
+  color: #6c757d !important;
+}
+
+.link-light {
+  color: rgb(242, 242, 242);
+}
+
+#principios {
+  background: rgba(79, 140, 123, 0.9);
+}
+
+#footer {
+  background: rgba(58, 102, 140, 0.9);
+}
+
+/* ----- */
+
+/* icons */
+.my-hover-icon {
+  cursor: pointer;
+  transition: transform 0.2s;
+  text-decoration: none;
+}
+
+.my-hover-icon:hover {
+  transform: scale(1.25);
+}
+
+header .my-hover-icon, .col-3 .my-hover-icon {
+  font-size: 3.5rem;
 }
 
 /* ----- */
@@ -72,20 +150,7 @@ body {
 
 /* ----- */
 
-/* header */
-.header-hr {
-  margin-top: 16px;
-  margin-bottom: 32px;
-  background: linear-gradient(80deg, #13ff47, rgb(158, 255, 79) 37%, rgb(100, 150, 255) 70%, #275fff), rgb(255, 255, 255);
-}
-
-/* ----- */
-
 /* serviços */
-.section-hr {
-  margin-bottom: 32px;
-  margin-top: 32px;
-}
 
 /* portfolio template*/
 /* https://startbootstrap.com/previews/agency */
@@ -141,67 +206,4 @@ body {
   padding: 25px;
   text-align: justify;
   background-color: #fff;
-}
-
-/* modais */
-.my-hover-icon {
-  cursor: pointer;
-  transition: transform 0.2s;
-  text-decoration: none;
-}
-
-.my-hover-icon:hover {
-  transform: scale(1.25);
-}
-
-header .my-hover-icon {
-  font-size: 4rem;
-}
-
-.modal-body {
-  text-align: center;
-}
-
-.modal-text {
-  text-align: justify;
-}
-
-.modal-text h5, .modal-text p, .modal-text ul {
-  margin-top: 1rem !important;
-}
-
-.modal-text p, .modal-text ul {
-  color: #6c757d !important;
-}
-
-/* ----- */
-
-.tt {
-  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.8);
-}
-
-@media (max-width: 768px) {
-  .col-footer {
-    text-align: center !important;
-  }
-}
-
-.footer-list {
-  text-decoration: none;
-  color: #f2f2f2;
-}
-
-.tt2 {
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
-}
-
-.special {
-  max-width: 90% !important;
-  max-height: 400px !important;
-}
-
-@media (max-width: 767px) {
-  .special {
-    max-width: 280px !important;
-  }
 }
